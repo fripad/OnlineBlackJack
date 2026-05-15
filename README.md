@@ -29,7 +29,7 @@ The project includes:
 
 ---
 
-!(images/screenshots/gameplay.png)
+![Gameplay](images/screenshots/gameplay.png)
 
 ## Game Rules
 
