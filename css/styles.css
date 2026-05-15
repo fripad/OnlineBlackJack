@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+body {
+    background-color: darkgreen;
+    color: white;
+    font-family:'Lucida Sans', sans-serif;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.card {
+    background: #fff;
+    color: black;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #58303080;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    min-height: 120px;
+}
+
+.card-row img {
+    width: 90px;
+    height: auto;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 400px;
+    margin: 32px auto;
+    padding: 32px;
+}
+
+.auth-form input {
+    padding: 8px 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.game-info {
+    max-width: 800px;
+    margin: 16px auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deposit-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.deposit-controls input {
+    padding: 8px 12px;
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 120px;
+}
+
+.game-table {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    text-align: center;
+}
+
+.hand {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.hand h2 {
+    margin-bottom: 8px;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+#login-message,
+#game-message {
+    font-weight: bold;
+    min-height: 24px;
+    text-align: center;
+    margin-top: 16px;
+}

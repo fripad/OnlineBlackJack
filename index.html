@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Black Jack</title>
+    <script src="js/app.js" type="module"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>OnlineBlackJack</h1>
+
+        <button id="logout-btn" hidden>Logout</button>
+    </header>
+
+    <main id="login" class="card auth-form">
+        <input type="text" id="username" placeholder="Username">
+
+        <input type="text" id="password" placeholder="Password">
+
+        <button id="login-btn">Login</button>
+        <p id="login-message"></p>
+
+        <p>Don't have an account? <a href="#" id="show-create-btn">Create one!</a></p>
+    </main>
+
+    <main id="create-account" hidden class="card auth-form">
+        <input type="text" id="new-username" placeholder="Choose username">
+        
+        <input type="text" id="new-password" placeholder="Choose password">
+
+        <button id="create-account-btn">Create account</button>
+
+        <button id="back-to-login-btn">Back to login</button>
+    </main>
+
+    <main id="game" hidden>
+        <section class="game-table card">
+
+            <div class="game-info">
+                <p>Balance: $<span id="balance">0</span></p>
+                <div class="deposit-controls">
+                    <input id="balance-deposit-amount" type="number" min="1" placeholder="Amount">
+                    <button id="balance-deposit-btn">Deposit</button>
+                </div>
+            </div>
+
+            <div class="hand">
+                <h2>Dealer</h2>
+                <div id="dealer-cards" class="card-row"></div>
+            </div>
+
+            <div class="hand">
+                <h2>Player</h2>
+                <div id="player-cards" class="card-row"></div>
+            </div>
+
+            <p id="game-message"></p>
+
+            <div class="game-controls">
+                <input type="number" id="bet-input" min="20" placeholder="Bet">
+                <button id="place-bet-btn">Place bet</button>
+                
+                <button id="start-game-btn">Start game</button>
+                
+                <button id="hit-btn">Hit</button>
+                
+                <button id="stand-btn">Stand</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
