@@ -29,6 +29,8 @@ The project includes:
 
 ---
 
+!(images/screenshots/gameplay.png)
+
 ## Game Rules
 
 - Goal is to get as close to 21 as possible without going over
